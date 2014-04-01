@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_INIT([GNU findutils], 4.4.2, [bug-findutils@gnu.org])
 AC_CONFIG_AUX_DIR(build-aux)
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([1.11 silent-rules])
 
 AC_CONFIG_SRCDIR([find/pred.c])
 AC_CONFIG_HEADERS([config.h])
@@ -206,7 +206,7 @@ jy_AC_ATTRIBUTE_NORETURN
 
 dnl internationalization macros
 AM_GNU_GETTEXT([external])
-AM_GNU_GETTEXT_VERSION(0.14.5)
+AM_GNU_GETTEXT_VERSION(0.17)
 
 dnl regextype.c and regexprops.c are designed to be usable outside findutils,
 dnl but findutils doesn't want to support all the regex types in gnulib,
